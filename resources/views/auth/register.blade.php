@@ -9,8 +9,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}"
-                    enctype="multipart\form-data">
-                    <!-- incluir acima para validacao de imagens -->
+                    enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group row">
@@ -62,12 +61,10 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-
-                        <!-- inserindo campo no cadastro que nos temos no BD, usando o mesmo padrao do laravel jah utilizado por ele -->
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label text-md-right">{{ __('Imagem do perfil') }}</label>
+                            <label  class="col-md-4 col-form-label text-md-right">Imagem de Perfil</label>
                             <div class="col-md-6">
-                                <input type="file" class="form-control" name="imgProfile">
+                                <input class="form-control" type="file" name="img">
                             </div>
                         </div>
 

@@ -1,4 +1,3 @@
-<!-- abaixo funcao do blade, padrao, para usar o app.blade com o template para todas as paginas -->
 @extends('layouts.app')
 
 @section('content')
